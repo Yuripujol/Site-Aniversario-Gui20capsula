@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Capsula</title>
+</head>
+
+<body>
+
+    <div class="conteiner-pai">
+
+        <img src="./assets/Capsula nova 1.6.png" alt="Não apareceu saporra" class="capsula">
+
+
+
+        <div class="caixa-buttons">
+
+            <button id="introdução" onclick="audiodaintrodução.play();">Introdução</button>
+
+            <div class="caixa-ação">
+                <a href="https://yuripujol.github.io/Site-Aniversario-Gui20/"> <button class="ação">Ação</button></a>
+               
+            </div>
+
+            <button class="outras-regras" onclick="audiodeoutrasregras.play();">Outras regras</button>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        // AUDIO PARA O BOTÃO INTRODUÇÃO //
+
+        const audiodaintrodução = new Audio();
+
+        audiodaintrodução.src = "./assets/Frase de introdução .MP3";
+
+        // AUDIO PARA O BOTÃO OUTRAS REGRAS //
+
+        const audiodeoutrasregras = new Audio();
+
+        audiodeoutrasregras.src = "./assets/Frase dos fortões do bar.MP3";
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
